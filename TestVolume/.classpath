@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="J:/workspace/338/android-support-v4/classes.jar"/>
+	<classpathentry kind="lib" path="J:/workspace/338/com.cultraview.tv/classes.jar"/>
+	<classpathentry kind="lib" path="J:/workspace/338/com.mstar.android/classes.jar"/>
+	<classpathentry kind="lib" path="J:/workspace/338/core/classes.jar"/>
+	<classpathentry kind="lib" path="J:/workspace/338/core-libart/classes.jar"/>
+	<classpathentry kind="lib" path="J:/workspace/338/framework/classes.jar" sourcepath="F:/android-19"/>
+	<classpathentry kind="lib" path="J:/workspace/338/framework2/classes.jar"/>
+	<classpathentry kind="lib" path="J:/workspace/338/settings/classes.jar"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
