@@ -1,0 +1,85 @@
+
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);          //防锯齿
+        paint.setDither(true);            //防抖动
+        paint.setStyle(Paint.Style.STROKE);          //画笔类型 STROKE空心 FILL 实心 FILL_AND_STROKE 用契形填充
+        paint.setStrokeJoin(Paint.Join.ROUND);      //画笔接洽点类型 如影响矩形但角的外轮廓
+        paint.setStrokeCap(Paint.Cap.ROUND);      //画笔笔刷类型 如影响画笔但始末端
+
+
+
+像素密度是DPI
+
+android:paddingTop 指该控件内部内容距离该控件上边缘的边距
+android:paddingBottom 指该控件内部内容距离该控件下边缘的边距
+android:paddingLeft 指该控件内部内容距离该控件左边缘的边距
+android:paddinRight 指该控件内部内容距离该控件右边缘的边距
+
+
+px
+即像素，1px代表屏幕上一个物理的像素点；
+px单位不被建议使用，因为同样100px的图片，在不同手机上显示的实际大小可能不同
+
+dp=dip
+像素密度（单位空间上的像素点数）不同分辨率图片的大小是一样的
+sp
+与缩放无关的抽象像素（Scale-independent Pixel）。sp和dp很类似但唯一的区别是，
+Android系统允许用户自定义文字尺寸大小（小、正常、大、超大等等），当
+文字尺寸是“正常”时1sp=1dp=0.00625英寸，而当文字尺寸是“大”或“超大”时，
+1sp>1dp=0.00625英寸。
+
+为什么自定义控件？
+特定的显示风格
+处理特有的用户交互
+优化我们的布局
+封装等
+
+如何自定义控件？
+1、自定义属性的声明与获取
+2、测量onMeasure
+3、布局onLayout（ViewGroup）
+4、绘制onDraw
+5、onTouchEvent
+6、onInterceptTouchEvent
+
+自定义属性的声明与获取
+
+分析需要的自定义属性
+在res/vaules/attrs.xml定义声明
+在View的构造方法中进行获取
+
+
+测量onMeasure
+
+1、exactly At_Most UNISPECIFIED
+
+2、MeasureSpec
+
+3、setMeasuredDimension
+   
+4、requestLayout（）
+   调用这个方法触发测量，布局（不包含布局）
+
+
+布局onlayout（ViewGroup）
+
+1、决定字View的位置
+
+2、尽可能的将onMeasure中的一些操作移动到此方法中
+
+3、requestLayout（）
+
+绘制onDraw
+
+1、绘制内容区域（不包含背景，只绘制内容）
+
+2、invalidate(),postInvalidate();
+
+3、Canvas.drawXXX
+
+4、translate\rotate \scale\skew
+
+5、save()、restore()
+
+
+
